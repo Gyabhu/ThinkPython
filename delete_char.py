@@ -1,10 +1,10 @@
-print("    *******I am Groot and I love Plants*******")
 s = "I am Groot and I love Plants"
-i = input('Enter char to delete: ')
-
-# method 1
-i = i.lower()
-print(s.replace(i, ""))
+def del_str(a):
+    print("    *******I am Groot and I love Plants*******")
+    i = input('Enter char to delete: ')
+    # method 1
+    i = i.lower()
+    return a.replace(i, "")
 
 # method 2
 new = ""
