@@ -7,7 +7,7 @@ import time
 def decorator(function):
     def inner_function(*a,**b):
         start = time.time()
-        result =function(*a,**b)
+        result = function(*a,**b)
         end = time.time() - start
         print("Time taken ", end)
         return result
