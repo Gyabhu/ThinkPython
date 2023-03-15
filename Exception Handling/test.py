@@ -6,15 +6,17 @@
 
 def add(x,y):
     return x + y
-a = input("Enter Number: ")
-b = input("Enter Number: ")
+
 
 try:
-    add(a+b)
-
+    a = int(input("Enter Number: "))
+    b = int(input("Enter Number: "))
 except ValueError:
     print('Cannot add string and int')
 
 else :
-    add(str(a) + str(b))
+    result = add(a,b)
+    print(result)
+
+print(divide())
 
